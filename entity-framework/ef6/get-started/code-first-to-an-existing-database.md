@@ -13,14 +13,14 @@ caps.latest.revision: 3
 # Code First to an Existing Database
 This video and step-by-step walkthrough provide an introduction to Code First development targeting an existing database. Code First allows you to define your model using C\# or VB.Net classes. Optionally additional configuration can be performed using attributes on your classes and properties or by using a fluent API.
 
-[See the video that accompanies this step-by-step walkthrough.](http://channel9.msdn.com/blogs/ef/code-first-to-existing-database-ef6-1-onwards-)
- 
+## Watch the video
+This video is [now available on Channel 9](http://channel9.msdn.com/blogs/ef/code-first-to-existing-database-ef6-1-onwards-).
 
 ## Pre-Requisites
 
 You will need to have **Visual Studio 2012** or **Visual Studio 2013** installed to complete this walkthrough.
 
-You will also need version **6.1** (or later) of the **Entity Framework Tools for Visual Studio** installed. See [Get Entity Framework](~/ef6/get-entity-framework.md) for information on installing the latest version of the Entity Framework Tools.
+You will also need version **6.1** (or later) of the **Entity Framework Tools for Visual Studio** installed. See [Get Entity Framework](~/ef6/get-started/get-entity-framework.md) for information on installing the latest version of the Entity Framework Tools.
 
 ## 1. Create an Existing Database
 
@@ -215,18 +215,13 @@ The Visual Studio Blog
 Press any key to exit...
 ```
  
-
 ## What if My Database Changes?
 
 The Code First to Database wizard is designed to generate a starting point set of classes that you can then tweak and modify. If your database schema changes you can either manually edit the classes or perform another reverse engineer to overwrite the classes.
 
- 
+## Using Code First Migrations to an Existing Database
 
-## Using Code First Migrations with an Existing Database
-
-If you want to use Code First Migrations with your existing database, see [Code First Migrations with an existing database](~/ef6/code-first-migrations-with-an-existing-database.md).
-
- 
+If you want to use Code First Migrations with an existing database, see [Code First Migrations to an existing database](~/ef6/modeling/code-first/migrations/existing-database.md).
 
 ## Summary
 
