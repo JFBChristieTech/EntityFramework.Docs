@@ -130,6 +130,12 @@
 ### [⤤ API Reference](https://docs.microsoft.com/dotnet/api/?view=efcore-2.1)
 
 ## [Entity Framework 6](ef6/index.md)
+
+### [New in EF6](ef6/versions/index.md)
+#### [Roadmap](ef6/versions/roadmap.md)
+#### [Upgrading To EF6](ef6/versions/upgrading-to-ef6.md)
+#### [Using Different Visual Studio Versions](ef6/versions/visual-studio.md)
+
 ### [Get Started](ef6/get-started/index.md)
 #### [Using Model-First](ef6/get-started/model-first.md)
 #### [Using Database-First](ef6/get-started/database-first.md)
@@ -178,14 +184,14 @@
 ###### [Update](ef6/modeling/designer/stored-procedures/cud.md)
 ##### [Mapping Relationships](ef6/modeling/designer/relationships.md)
 
-### [Querying and Finding Entities](ef6/querying/index.md)
+### [Querying Data](ef6/querying/index.md)
 #### [Load Method](ef6/querying/load-method.md)
 #### [Local Data](ef6/querying/local-data.md)
 #### [Tracking and No Tracking Queries](ef6/querying/no-tracking.md)
 #### [Using Raw SQL Queries](ef6/querying/raw-sql.md)
 #### [Querying Related Data](ef6/querying/related-data.md)
 
-### Saving Entities
+### Saving Data
 #### [Handling Concurrency Conflicts](ef6/saving/concurrency.md)
 #### [Using Transactions](ef6/saving/transactions.md)
 #### [Data Validation](ef6/saving/validation.md)
@@ -239,37 +245,6 @@
 ##### [Writing Your Own Test Doubles](ef6/advanced/testing/writing-test-doubles.md)
 ##### [Testability with EF4 (Article)](ef6/advanced/testing/testability-article.md)
 
-### [Versions](ef6/versions/index.md)
-#### [Roadmap](ef6/versions/roadmap.md)
-#### [Upgrading To EF6](ef6/versions/upgrading-to-ef6.md)
-#### [Using Different Visual Studio Versions](ef6/versions/visual-studio.md)
-#### Licenses
-##### EF5
-###### [Chinese Simplified](ef6/versions/licenses/ef5/chs.md)
-###### [Chinese Traditional](ef6/versions/licenses/ef5/cht.md)
-###### [German](ef6/versions/licenses/ef5/deu.md)
-###### [English](ef6/versions/licenses/ef5/enu.md)
-###### [Spanish](ef6/versions/licenses/ef5/esn.md)
-###### [French](ef6/versions/licenses/ef5/fra.md)
-###### [Italian](ef6/versions/licenses/ef5/ita.md)
-###### [Japanese](ef6/versions/licenses/ef5/jpn.md)
-###### [Korean](ef6/versions/licenses/ef5/kor.md)
-###### [Russian](ef6/versions/licenses/ef5/rus.md)
-##### EF6
-###### Prerelease
-####### [Alpha](ef6/versions/licenses/ef6/prerelease/alpha.md)
-####### [Beta - Release Candidate](ef6/versions/licenses/ef6/prerelease/beta-rc.md)
-###### [Chinese Simplified](ef6/versions/licenses/ef6/chs.md)
-###### [Chinese Traditional](ef6/versions/licenses/ef6/cht.md)
-###### [German](ef6/versions/licenses/ef6/deu.md)
-###### [English](ef6/versions/licenses/ef6/enu.md)
-###### [Spanish](ef6/versions/licenses/ef6/esn.md)
-###### [French](ef6/versions/licenses/ef6/fra.md)
-###### [Italian](ef6/versions/licenses/ef6/ita.md)
-###### [Japanese](ef6/versions/licenses/ef6/jpn.md)
-###### [Korean](ef6/versions/licenses/ef6/kor.md)
-###### [Russian](ef6/versions/licenses/ef6/rus.md)
-
 ### [Additional Resources](ef6/resources/index.md)
 #### [Blogs](ef6/resources/blogs.md)
 #### [Case Studies](ef6/resources/case-studies.md)
@@ -278,5 +253,31 @@
 #### [Providers](ef6/resources/providers.md)
 #### [School Sample Database](ef6/resources/school-database.md)
 #### [Tools & Extensions](ef6/resources/tools.md)
+#### Licenses
+##### EF5
+###### [Chinese Simplified](ef6/resources/licenses/ef5/chs.md)
+###### [Chinese Traditional](ef6/resources/licenses/ef5/cht.md)
+###### [German](ef6/resources/licenses/ef5/deu.md)
+###### [English](ef6/resources/licenses/ef5/enu.md)
+###### [Spanish](ef6/resources/licenses/ef5/esn.md)
+###### [French](ef6/resources/licenses/ef5/fra.md)
+###### [Italian](ef6/resources/licenses/ef5/ita.md)
+###### [Japanese](ef6/resources/licenses/ef5/jpn.md)
+###### [Korean](ef6/resources/licenses/ef5/kor.md)
+###### [Russian](ef6/resources/licenses/ef5/rus.md)
+##### EF6
+###### Prerelease
+####### [Alpha](ef6/resources/licenses/ef6/prerelease/alpha.md)
+####### [Beta - Release Candidate](ef6/resources/licenses/ef6/prerelease/beta-rc.md)
+###### [Chinese Simplified](ef6/resources/licenses/ef6/chs.md)
+###### [Chinese Traditional](ef6/resources/licenses/ef6/cht.md)
+###### [German](ef6/resources/licenses/ef6/deu.md)
+###### [English](ef6/resources/licenses/ef6/enu.md)
+###### [Spanish](ef6/resources/licenses/ef6/esn.md)
+###### [French](ef6/resources/licenses/ef6/fra.md)
+###### [Italian](ef6/resources/licenses/ef6/ita.md)
+###### [Japanese](ef6/resources/licenses/ef6/jpn.md)
+###### [Korean](ef6/resources/licenses/ef6/kor.md)
+###### [Russian](ef6/resources/licenses/ef6/rus.md)
 
 ### [⤤ API Reference](https://msdn.microsoft.com/library/dn223258.aspx)
