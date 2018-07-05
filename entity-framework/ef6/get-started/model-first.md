@@ -16,8 +16,6 @@ This video and step-by-step walkthrough provide an introduction to Model First d
 ## Watch the video
 This video and step-by-step walkthrough provide an introduction to Model First development using Entity Framework. Model First allows you to create a new model using the Entity Framework Designer and then generate a database schema from the model. The model is stored in an EDMX file (.edmx extension) and can be viewed and edited in the Entity Framework Designer. The classes that you interact with in your application are automatically generated from the EDMX file.
 
-[See the step-by-step walkthrough that accompanies this video.](~/ef6/get-started/model-first.md)
-
 **Presented By**: [Rowan Miller](http://romiller.com/)
 
 **Video**: [WMV](http://download.microsoft.com/download/5/B/1/5B1C338C-AFA7-4F68-B304-48BB008146EF/HDI-ITPro-MSDN-winvideo-modelfirst.wmv) | [MP4](http://download.microsoft.com/download/5/B/1/5B1C338C-AFA7-4F68-B304-48BB008146EF/HDI-ITPro-MSDN-mp4video-modelfirst.m4v) | [WMV (ZIP)](http://download.microsoft.com/download/5/B/1/5B1C338C-AFA7-4F68-B304-48BB008146EF/HDI-ITPro-MSDN-winvideo-modelfirst.zip)
@@ -27,8 +25,6 @@ This video and step-by-step walkthrough provide an introduction to Model First d
 You will need to have Visual Studio 2010 or Visual Studio 2012 installed to complete this walkthrough.
 
 If you are using Visual Studio 2010, you will also need to have [NuGet](http://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c) installed.
-
- 
 
 ## 1. Create the Application
 
@@ -40,8 +36,6 @@ To keep things simple we’re going to build a basic console application that us
 -   Enter **ModelFirstSample** as the name
 -   Select **OK**
 
- 
-
 ## 2. Create Model
 
 We’re going to make use of Entity Framework Designer, which is included as part of Visual Studio, to create our model.
@@ -52,8 +46,6 @@ We’re going to make use of Entity Framework Designer, which is included as par
 -   Select **Empty Model** and click **Finish**
 
     ![CreateEmptyModel](~/ef6/media/createemptymodel.png)
-
- 
 
 The Entity Framework Designer is opened with a blank model. Now we can start adding entities, properties and associations to the model.
 
@@ -72,8 +64,6 @@ The Entity Framework Designer is opened with a blank model. Now we can start add
 -   Using the techniques you just learnt, add a **Post** entity with a **PostId** key property
 -   Add **Title** and **Content** scalar properties to the **Post** entity
 
- 
-
 Now that we have a couple of entities, it’s time to add an association (or relationship) between them.
 
 -   Right-click on the design surface and select **Add New -&gt; Association…**
@@ -83,13 +73,9 @@ Now that we have a couple of entities, it’s time to add an association (or rel
 
     ![AddAssociationMF](~/ef6/media/addassociationmf.png)
 
- 
-
 We now have a simple model that we can generate a database from and use to read and write data.
 
 ![ModelInitial](~/ef6/media/modelinitial.png)
-
- 
 
 ### Additional Steps in Visual Studio 2010
 
@@ -111,8 +97,6 @@ Next, we need to swap our model to generate code that makes use of the DbContext
 
     ![DbContextTemplate](~/ef6/media/dbcontexttemplate.png)
 
- 
-
 ## 3. Generating the Database
 
 Given our model, Entity Framework can calculate a database schema that will allow us to store and retrieve data using the model.
@@ -121,8 +105,6 @@ The database server that is installed with Visual Studio is different depending 
 
 -   If you are using Visual Studio 2010 you'll be creating a SQL Express database.
 -   If you are using Visual Studio 2012 then you'll be creating a [LocalDB](https://msdn.microsoft.com/library/hh510202(v=sql.110).aspx) database.
-
- 
 
 Let's go ahead and generate the database.
 
@@ -138,8 +120,6 @@ Let's go ahead and generate the database.
 -   Once the script is displayed, click **Finish** and the script will be added to your project and opened
 -   Right-click on the script and select **Execute**, you will be prompted to specify the database to connect to, specify LocalDB or SQL Server Express, depending on which version of Visual Studio you are using
 
- 
-
 ## 4. Reading & Writing Data
 
 Now that we have a model it’s time to use it to access some data. The classes we are going to use to access data are being automatically generated for you based on the EDMX file.
@@ -147,8 +127,6 @@ Now that we have a model it’s time to use it to access some data. The classes 
 *This screen shot is from Visual Studio 2012, if you are using Visual Studio 2010 the BloggingModel.tt and BloggingModel.Context.tt files will be directly under your project rather than nested under the EDMX file.*
 
 ![GeneratedClasses](~/ef6/media/generatedclasses.png)
-
- 
 
 Implement the Main method in Program.cs as shown below. This code creates a new instance of our context and then uses it to insert a new Blog. Then it uses a LINQ query to retrieve all Blogs from the database ordered alphabetically by Title.
 
@@ -193,7 +171,6 @@ All blogs in the database:
 ADO.NET Blog
 Press any key to exit...
 ```
- 
 
 ## 5. Dealing with Model Changes
 
@@ -209,8 +186,6 @@ We’ll start by adding a new User entity to our model.
     *This restricts the data that can be stored in username to 50 characters*
 -   Add a **DisplayName** scalar property to the **User** entity
 
- 
-
 We now have an updated model and we are ready to update the database to accommodate our new User entity type.
 
 -   Right-click on the design surface and select **Generate Database from Model…**, Entity Framework will calculate a script to recreate a schema based on the updated model.
@@ -219,8 +194,6 @@ We now have an updated model and we are ready to update the database to accommod
 -   The updated SQL script to create the database is opened for you  
     *The script that is generated will drop all existing tables and then recreate the schema from scratch. This may work for local development but is not a viable for pushing changes to a database that has already been deployed. If you need to publish changes to a database that has already been deployed, you will need to edit the script or use a schema compare tool to calculate a migration script.*
 -   Right-click on the script and select **Execute**, you will be prompted to specify the database to connect to, specify LocalDB or SQL Server Express, depending on which version of Visual Studio you are using
-
- 
 
 ## Summary
 
